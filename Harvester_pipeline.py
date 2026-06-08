@@ -344,7 +344,7 @@ def rename_json_to_done(filepath):
 
 # Paramètres FTP
 FTP_HOST = os.getenv("FTP_HOST")
-FTP_PORT = os.getenv("FTP_PORT")
+FTP_PORT = int(os.getenv("FTP_PORT"))
 FTP_USER = os.getenv("FTP_USER")
 FTP_PASSWORD = os.getenv("FTP_PASSWORD")
 FTP_REMOTE_DIR = os.getenv("FTP_REMOTE_DIR")
@@ -456,7 +456,7 @@ if __name__ == "__main__":
     available_repositories: Dict[str, Dict[str, Any]] = {
         "inrae": {
             "harvester_uid": "moissonneur-rdg",
-            "harvest": True,
+            "harvest": False,
             "Type_moissonnage": "OAI-PMH",
             "base_url": "https://entrepot.recherche.data.gouv.fr/oai",
             "metadata_prefix": "dataverse_json",
@@ -680,7 +680,7 @@ if __name__ == "__main__":
         },
          "ubo": {
             "harvester_uid": "moissonneur-rdgubo",
-            "harvest": False,
+            "harvest": True,
             "Type_moissonnage": "Direct",
             "base_url": "https://entrepot.recherche.data.gouv.fr/oai",
             "metadata_prefix": "dataverse_json",
