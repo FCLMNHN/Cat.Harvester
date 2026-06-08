@@ -177,6 +177,12 @@ dmypy.json
 
 .DS_Store
 
+OAI_Records/
+*_JSONs/
+*.xml
+*.json
+*.csv
+
 # pytype static type analyzer
 .pytype/
 
