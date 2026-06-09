@@ -4,6 +4,8 @@ Ce script Python (`Extract_JSONs_Sequence.py`) est un outil complet de moissonna
 V 5.0
 ---
 
+## V 5.0
+
 ## Fonctionnalités Principales
 
 * **Multi-Protocole** : Supporte le moissonnage via le protocole **OAI-PMH** (XML) et l'API **Search de Dataverse** (JSON Direct).
